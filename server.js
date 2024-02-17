@@ -28,7 +28,7 @@ app.use(express.static(path.join(__dirname, './client/build')))
 app.use('/api/v1/auth', authRoutes);
 app.use('/api/v1/product', productRoute);
 
-const PORT = process.env.PORT;
+const PORT = 8080;
 
 app.get('/', (req, res) => {
     res.send('Radhe-Krishna --- Radhe-Radhe')
